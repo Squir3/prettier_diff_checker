@@ -5,7 +5,6 @@ pipeline {
         stage('Instalacja zależności') {
             steps {
                 script {
-                    // Zamiast sh, użyj bat w Windows
                     bat 'npm install'
                 }
             }
@@ -40,3 +39,4 @@ pipeline {
         }
     }
 }
+

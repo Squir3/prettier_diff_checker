@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1737966757217" clover="3.2.0">
-  <project timestamp="1737966757217" name="All files">
+<coverage generated="1737990458720" clover="3.2.0">
+  <project timestamp="1737990458720" name="All files">
     <metrics statements="50" coveredstatements="45" conditionals="17" coveredconditionals="13" methods="7" coveredmethods="6" elements="74" coveredelements="64" complexity="0" loc="50" ncloc="50" packages="1" files="1" classes="1"/>
-    <file name="prettier-diff-checker.js" path="/app/prettier-diff-checker.js">
+    <file name="prettier-diff-checker.js" path="C:\Users\sting\OneDrive\Pulpit\STUDIA CO TO JEST\MGR\NTWO\Projekt\prettier_diff_checker\prettier-diff-checker.js">
       <metrics statements="50" coveredstatements="45" conditionals="17" coveredconditionals="13" methods="7" coveredmethods="6"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="1" type="stmt"/>

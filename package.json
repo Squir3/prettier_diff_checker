@@ -1,8 +1,27 @@
 {
+  "name": "prettier-diff-checker",
+  "version": "1.0.0",
+  "description": "A CLI tool to compare code before and after Prettier formatting.",
+  "main": "prettier-diff-checker.js",
+  "bin": {
+    "prettier-diff-checker": "./prettier-diff-checker.js"
+  },
   "dependencies": {
     "diff": "^7.0.0",
     "prettier": "^3.4.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Squir3/prettier_diff_checker.git"
+  },
+  "keywords": [
+    "prettier",
+    "diff",
+    "cli",
+    "code formatting"
+  ],
+  "author": "Squire",
+  "license": "MIT",
   "devDependencies": {
     "jest": "^29.7.0"
   },
