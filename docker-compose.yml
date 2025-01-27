@@ -1,0 +1,47 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    command: npm test
+    ports:
+      - "3000:3000"
+    depends_on:
+      - gitea
+      - jenkins
+
+  gitea:
+    image: gitea/gitea:latest
+    container_name: gitea
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+    volumes:
+      - gitea:/data
+    ports:
+      - "3001:3000"
+      - "222:22"
+    networks:
+      - ci-network
+
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    environment:
+      - JENKINS_OPTS=--prefix=/jenkins
+    volumes:
+      - jenkins_home:/var/jenkins_home
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    networks:
+      - ci-network
+
+volumes:
+  gitea:
+  jenkins_home:
+networks:
+  ci-network:
+    driver: bridge

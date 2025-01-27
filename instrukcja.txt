@@ -1,0 +1,7 @@
+Uruchomienie modułu:
+node prettier-diff-checker.js nazwapliku.js
+
+np. node prettier-diff-checker.js messy_code.js
+
+Uruchomienie testów:
+npm test
